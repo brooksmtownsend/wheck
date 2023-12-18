@@ -1,0 +1,20 @@
+package component:wheck;
+
+world wheck {
+    /// Supported case conversions
+    enum case {
+      kebab,
+      lower-camel,
+      pascal,
+      shouty-kebab,
+      shouty-snake,
+      shouty-snek,
+      snake,
+      snek,
+      title,
+      train,
+      upper-camel,
+    }
+
+    export to-case: func(input: string, to: case) -> string;
+}
